@@ -54,5 +54,16 @@ namespace Eloqua.Api.Rest.ClientLibrary.Clients
                         depth = depth.ToString()
                     });
         }
+        public SearchResponse<T> Get(string search, int pageNumber, int pageSize, string lastUpdated, Depth depth = Depth.complete)
+        {
+            return _baseClient.Search<T>(new T
+            {
+                searchTerm = search,
+                page = pageNumber,
+                pageSize = pageSize,
+                depth = depth.ToString(),
+                lastUpdatedAt = lastUpdated
+            });
+        }
     }
 }

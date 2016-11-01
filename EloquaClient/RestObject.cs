@@ -10,6 +10,8 @@ namespace Eloqua.Api.Rest.ClientLibrary
         public string type;
         public string depth { get; set; }
 
+        public string lastUpdatedAt { get; set; }
+
         public string Uri
         {
             get

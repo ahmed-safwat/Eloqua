@@ -28,6 +28,8 @@ namespace Eloqua.Api.Rest.ClientLibrary.Models.Assets.Emails
         public int? updatedAt { get; set; }
         public int? updatedBy { get; set; }
 
+        public string currentStatus { get; set; }
+
         #region ISearchable
 
         public int page { get; set; }

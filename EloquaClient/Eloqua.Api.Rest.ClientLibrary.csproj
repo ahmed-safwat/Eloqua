@@ -9,7 +9,7 @@
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
     <RootNamespace>Eloqua.Api.Rest.ClientLibrary</RootNamespace>
-    <AssemblyName>Eloqua.Api.Rest.ClientLibrary</AssemblyName>
+    <AssemblyName>Eloqua.Api.Rest.ClientLibrary.new</AssemblyName>
     <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <TargetFrameworkProfile />

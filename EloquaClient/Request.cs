@@ -68,7 +68,10 @@ namespace Eloqua.Api.Rest.ClientLibrary
                                     "&page=" + searchObj.page +
                                     "&depth=" + restObj.depth
                                     );
-
+                    if (!string.IsNullOrEmpty(restObj.lastUpdatedAt))
+                    {
+                        resource.Append("&lastUpdatedAt=" + restObj.lastUpdatedAt);
+                    }
                     request.Resource = resource.ToString();
 
                     break;
