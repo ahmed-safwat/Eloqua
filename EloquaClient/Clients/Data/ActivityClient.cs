@@ -17,12 +17,11 @@ namespace Eloqua.Api.Rest.ClientLibrary.Clients.Data
             var request = new RestRequest
             {
                 RequestFormat = DataFormat.Json,
-                Resource = string.Format("/data/activities/contact/{0}/{1}?count={2}&startAt={3}&endAt={4}&page={5}", id, type, count, startDate, endDate, page) 
+                Resource = string.Format("/data/activities/contact/{0}?type={1}&count={2}&startDate={3}&endDate={4}&page={5}", id, type, count, startDate, endDate, page) 
             };
 
             return _baseClient.Execute<List<Activity>>(request);
         }
-
         public List<BouncebackActivity> Get(int? id, int count, long startDate, long endDate, int page)
         {
             var request = new RestRequest
